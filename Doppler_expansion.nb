@@ -1,0 +1,165 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5386,        157]
+NotebookOptionsPosition[      4413,        133]
+NotebookOutlinePosition[      4806,        149]
+CellTagsIndexPosition[      4763,        146]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"doppler", "[", 
+   RowBox[{"v_", ",", " ", "dirk_"}], "]"}], ":=", 
+  RowBox[{"\[Omega]", 
+   RowBox[{"(", 
+    FractionBox[
+     RowBox[{"1", "-", 
+      FractionBox[
+       RowBox[{"v", ".", "dirk"}], "c"]}], 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"1", "-", 
+       FractionBox[
+        RowBox[{"v", ".", "v"}], 
+        SuperscriptBox["c", "2"]]}], "]"}]], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.904833755021831*^9, 3.9048337801934958`*^9}, {
+  3.9048341231241283`*^9, 3.904834123413039*^9}, {3.904834512302354*^9, 
+  3.904834518829547*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"fe5fe973-5a50-4fc5-9d93-9f4d6923a0ff"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grad", "[", 
+  RowBox[{
+   RowBox[{"doppler", "[", 
+    RowBox[{"v", ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", "v"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.904834429350725*^9, 3.90483447170328*^9}, {
+  3.904834525403646*^9, 3.904834553441893*^9}, {3.904834633170972*^9, 
+  3.9048346393866177`*^9}, {3.904834713710309*^9, 3.904834728543494*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"a2685c70-341d-45c4-8c34-505504fa86b5"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{"\[Omega]", " ", 
+      RowBox[{"(", 
+        RowBox[{"1", "-", 
+          FractionBox[
+           RowBox[{"v", ".", 
+             RowBox[{"{", 
+               RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "c"]}], ")"}]}], 
+    SqrtBox[
+     RowBox[{"1", "-", 
+       FractionBox[
+        RowBox[{"v", ".", "v"}], 
+        SuperscriptBox["c", "2"]]}]]], "v"},
+  "Grad"]], "Output",
+ CellChangeTimes->{{3.904834706719631*^9, 3.9048347289411297`*^9}},
+ CellLabel->"Out[28]=",ExpressionUUID->"0157195f-3b49-458c-b308-bdcb5aee149f"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"gradDoppler", "[", 
+   RowBox[{"v_", ",", "dirk_"}], "]"}], ":=", 
+  RowBox[{"Grad", "[", 
+   RowBox[{
+    RowBox[{"doppler", "[", 
+     RowBox[{"V", ",", "dirk"}], "]"}], ",", "V"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.904833788531427*^9, 3.904833838285452*^9}, {
+   3.9048338818703833`*^9, 3.904833896058814*^9}, {3.904833953024371*^9, 
+   3.9048339538576393`*^9}, 3.9048341493085413`*^9, {3.9048342341645737`*^9, 
+   3.9048342354540863`*^9}, {3.9048344155642548`*^9, 3.904834419505351*^9}, {
+   3.9048346105129023`*^9, 3.9048346256161127`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"ded07d5b-b60a-4fb5-ad3c-af5b5d7d7248"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dopplerOrder1", "[", "v_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"doppler", "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}], "]"}], "+", 
+   RowBox[{"v", ".", 
+    RowBox[{"gradDoppler", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.9048339325621357`*^9, 3.9048340642036543`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"933dbd9a-f612-4933-ae18-d52078447c75"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dopplerOrder1", "[", 
+  RowBox[{"{", 
+   RowBox[{"vx", ",", "vy", ",", "vz"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.904834067897066*^9, 3.904834074475411*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"3857d5dd-bf01-4154-93cc-74704702de84"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"doppler", "[", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}], "]"}], "+", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"vx", ",", "vy", ",", "vz"}], "}"}], ".", 
+   TemplateBox[{"\[Omega]", 
+     RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "0"}], "}"}]},
+    "Grad"]}]}]], "Output",
+ CellChangeTimes->{3.9048340748645153`*^9, 3.904834200398018*^9, 
+  3.904834577196042*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"1f94357f-1d7c-4436-baa8-3aaaa34351c9"]
+}, Open  ]]
+},
+WindowSize->{808, 678},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+FrontEndVersion->"13.1 for Mac OS X x86 (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c3f27823-18bc-47b1-923f-1ace5de2f23a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 665, 18, 105, "Input",ExpressionUUID->"fe5fe973-5a50-4fc5-9d93-9f4d6923a0ff"],
+Cell[CellGroupData[{
+Cell[1248, 42, 496, 11, 46, "Input",ExpressionUUID->"a2685c70-341d-45c4-8c34-505504fa86b5"],
+Cell[1747, 55, 583, 17, 103, "Output",ExpressionUUID->"0157195f-3b49-458c-b308-bdcb5aee149f"]
+}, Open  ]],
+Cell[2345, 75, 666, 13, 46, "Input",ExpressionUUID->"ded07d5b-b60a-4fb5-ad3c-af5b5d7d7248"],
+Cell[3014, 90, 579, 15, 78, "Input",ExpressionUUID->"933dbd9a-f612-4933-ae18-d52078447c75"],
+Cell[CellGroupData[{
+Cell[3618, 109, 271, 5, 46, "Input",ExpressionUUID->"3857d5dd-bf01-4154-93cc-74704702de84"],
+Cell[3892, 116, 505, 14, 54, "Output",ExpressionUUID->"1f94357f-1d7c-4436-baa8-3aaaa34351c9"]
+}, Open  ]]
+}
+]
+*)
+
