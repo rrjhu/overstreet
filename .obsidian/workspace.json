@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "691f87aa3d3ed648",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e164896ddc82c78",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "573ef62e9cd93b53",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "1f9d8780e8cb5e07",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "d59dc1c01744d5d5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ed55844aba4e685e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f647b1885d6f841",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f3f4fc982278bdb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a78b55cdab116471",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "antire",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d774f37f9963429d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "149ad93c35749032",
+    "type": "split",
+    "children": [
+      {
+        "id": "beb3595f92b8c85a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea473b97ba4eac37",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f9a0175a128c5513",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a6ffabea6b1e2707",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2e2d26a470fab6c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "3f3f4fc982278bdb",
+  "lastOpenFiles": [
+    "Table_w_pushpulls.pdf",
+    "Table.png",
+    "Table.pdf",
+    "RF_electronics.svg",
+    "RF_electronics.png",
+    "RF_electronics.pdf",
+    "TeX_head.tex",
+    "TeX_Head.tex",
+    "Head_SH_rules.tex",
+    "md2pdf.sh",
+    "SH_rules.sh",
+    "gr-temp/gr-cache-e652da25cf6945ff3e20cdeb9e81cf03.png",
+    "Media/Hecht_Optics.pdf",
+    "PDH lock.md",
+    "Log/2023 12 21.md",
+    "Media/Wald__GR.pdf",
+    "Media/Hestenes__Geometric_calculus.pdf",
+    "Log/2024 01 02.md",
+    "Log/Wave at a step.md",
+    "Log/2023 12 19.md",
+    "Log/2023 12 18.md",
+    "Log/2023 12 20.md",
+    "Log/2023 12 15.md",
+    "Log/2023 11 21.md",
+    "Riemann tensor.md",
+    "Curved, bent, twisted space.md",
+    "Geometric product.md",
+    "Zeeman slower.md",
+    "Tangent space.md",
+    "Log/2023 11 27.md",
+    "Log/2023 11 29.md",
+    "Log/2023 11 30.md",
+    "Log/2023 12 01.md",
+    "Log/2023 12 04.md",
+    "Log/2023 12 05.md",
+    "Log/2023 12 06.md",
+    "Log/2023 12 07.md",
+    "Log/2023 12 08.md",
+    "Log/2023 12 13.md",
+    "Log/2023 12 12.md",
+    "Media/Pasted image 20231201150706.png",
+    "Media/Pasted image 20231130141148.png",
+    "Media/Pasted image 20231127163616.png",
+    "Media/Pasted image 20231114164217.png",
+    "Media/Pasted image 20231114143108.png",
+    "Media/Pasted image 20231113142830.png"
+  ]
+}

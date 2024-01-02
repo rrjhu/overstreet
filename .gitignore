@@ -1,0 +1,6 @@
+*.pdf
+*.djvu
+cm.code-workspace
+.ipynb_checkpoints/
+gr-temp/
+vector_plot.ipynb
